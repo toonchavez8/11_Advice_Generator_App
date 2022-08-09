@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Advice #<!-- Advice ID goes here -->
+<body class="bg-DarkBlue">
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="flexContainer | bg-Dark">
+    <div class="advice-container |">
+      <h1 class="advice-title | text-Neon fs-400 font-Serif letter-spacing-1 uppercase">
+        <span>Advice </span> <span class="advice-Id"> #000</span>
+      </h1>
+      <p class="advice-Text | fs-600 fw-800 text-Light">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus molestias molestiae, hic tenetur perspiciatis
+        sapiente cumque in nulla repellendus reiciendis.
+      </p>
+
+      <figure class="advice-figure |">
+        <img src="./images/pattern-divider-desktop.svg" alt="advice-image" class="advice-image |">
+      </figure>
+
+      <button class=" dice-Button | bg-Neon" id="adviceBtn">
+
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_VnhOCi.json" mode="bounce"
+          background="transparent" speed="1" style="width:50px; height:50px;" hover>
+        </lottie-player>
+      </button>
+    </div>
+  </main>
+
+  <!-- Advice text goes here -->
+
+
+
+  <!-- Attribution section -->
+
+  <footer class="attribution">
+    <div class="footerblk">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/toonchavez8">Miguel Chavez</a>.</p>
+    </div>
+  </footer>
+
+  <script src="/Advice_Api.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
+
 </html>
